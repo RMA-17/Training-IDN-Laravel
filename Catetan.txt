@@ -1,0 +1,35 @@
+Untuk membuat Table menggunakan laravel:
+php artisan make:migration create_namatable_table
+
+Untuk drop semua Table terus ngepush ulang:
+php artisan migrate:fresh
+
+Untuk push table ke mySQL:
+php artisan migrate
+
+Download Template: https://drive.google.com/drive/folders/1Kr-4X69Mjnr_uBQRl7OO5ZgHXXvNsMsl
+
+Command: https://pastebin.com/Abjf1pWs
+
+Untuk menjalankan localhost Laravel:
+
+php artisan serve
+(default port: 8000)
+
+Untuk mengganti port:
+php artisan serve --port <custom port>
+
+Cara kill webserver: Ctrl + C
+
+Membuat Seeder (Isi table dengan codingan):
+php artisan make:seeder namadata
+
+Push Insert Into:
+php artisan db:seed --class=namaclass
+
+Membuat Model:
+php artisan make:model NamaModel -r
+(pastikan nama model harus huruf besar depannya)
+Model adalah penghubung database dengan kita
+
+API = Jembatan penghubung antara back-end dan front-end
